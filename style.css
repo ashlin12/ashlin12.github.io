@@ -1,0 +1,199 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+    
+.menuBtn{
+        width: 3rem;
+        height: auto;
+}
+
+.overlay{
+    background-color: pink;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0; 
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.overlay.active {
+    top: 0;
+    height: 100vh;
+}
+
+.carousel-item{
+    position: relative;
+    text-align: center;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 6em;
+}
+
+@media only screen and (max-width: 1120px) {
+    .title {
+        font-size: 4em;
+    }
+}
+
+
+@media only screen and (max-width: 740px) {
+    .title {
+        font-size: 2em;
+    }
+}
+#carouselExampleSlidesOnly{
+    text-align: center;
+}
+
+.top_pics{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.title2{
+    text-align: center;
+}
+
+.bydistrict img{
+    align-content: center;
+}
+
+.desc{
+    text-align: center;
+    font-size: 2.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*.box{
+    background-color: yellow;
+    position: relative;
+    .box img{
+        width: 100%;
+        height: auto;
+    }
+    .boxtitle{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 0,0,0.4);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: all 0.5s;
+    }
+    &:hover:before{
+        left: 0
+    }
+}
+*/
+
+
+
+.box a{
+    color: white;
+}
+
+.box a:hover{
+    opacity: 0.8;
+    color: red;
+}
+
+
+.box{
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin: 10px;
+}
+
+.box:hover{
+    color: red;
+    opacity: 0.80;
+}
+
+.boxtitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.booknow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reservations{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec_title{
+    border-bottom: white 1px solid;
+}
+
+.footer_list{
+    list-style: none;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
